@@ -11,20 +11,21 @@ if number % 1==0:
     number=int(number)
     summ=0
     while (number > 0):
-        summ = summ + number % 10
+        summ = int(summ + number % 10)
         number = number / 10
     print(f' Сумма цифр числа равна {int(summ)} ')
 else:
     d = (round( number % 1),2 )
     print(f'd  {d} ')
     summ=0
-    while(d!=0):
-        d = (d * 10)
-        print(f'd  {d} ')
+   # while(d!=0):
+    #d = int(( number % 1) * 10)
+    d = (d * 10)
+    print(f'd  {d} ')
         
-        summ=summ+int(d)
-        d=d-int(d)
-        print(f'd  {d} ')
+    #summ=summ+d
+    #d=d-int(d)
+    print(f'd  {d} ')
 
 
 
