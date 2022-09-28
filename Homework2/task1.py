@@ -33,14 +33,3 @@ else:
 #not isinstance(number,float)
 
 
-# int SummDigit(int number)
-# {
-#     int summ = 0;
-#     if (number < 0) number = Math.Abs(number);//проверяем отрицательное, берем по модулю
-#     while (number > 0)
-#     {
-#         summ = summ + number % 10;
-#         number = number / 10;
-#     }
-#     return summ;
-# }
