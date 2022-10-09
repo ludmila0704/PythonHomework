@@ -1,19 +1,20 @@
-#Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N.
+# Задайте натуральное число N. Напишите программу, которая составит список простых множителей числа N.
 number = int(input("Введите натуральное число N: "))
 listMn = []
 
-def Single_mn(num):
 
-    for i in range(1,num+1):
-        if num%i==0:
+def Single_mn(num):
+    i = 2
+    while (num) > 2:
+
+        if num % i == 0:
+            num = num//i
             listMn.append(i)
-            num=num//i
-            #Single_mn(num)
-    return listMn        
+        else:
+            i += 1
+
+    return listMn
+
 
 Single_mn(number)
-# for i in range(1,number+1):
-#     if number%i==0:
-#         listMn.append(i)
-#         number=number//i
-print(listMn)
+print(f'Простые множители натурального числа {number}: \n{listMn}')
