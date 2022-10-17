@@ -4,10 +4,10 @@
 #  6 -> да
 #  7 -> да
 #  1 -> нет
-week_number = int (input('Введите число дня недели:'))
-if week_number >= 1 and week_number <= 7: 
-    if week_number==6 or week_number==7:
-        print('Это выходной день!')
-    else:
-        print(f'Не выходной день')
-else: print('Введите верное число дня недели!')
+# week_number = int (input('Введите число дня недели:'))
+# if week_number >= 1 and week_number <= 7: 
+#     if week_number==6 or week_number==7:
+#         print('Это выходной день!')
+#     else:
+#         print(f'Не выходной день')
+# else: print('Введите верное число дня недели!')
